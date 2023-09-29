@@ -22,6 +22,7 @@ public class Cars2Controller {
 
     @GetMapping("/cars/Rental_date")
     public ResponseEntity<List<cars>> getByRental_date(@RequestParam int year, @RequestParam int month ){
+        System.out.println("Rental");
         return ResponseEntity.ok(cars2Service.findAllRental(year, month));
     }
 
