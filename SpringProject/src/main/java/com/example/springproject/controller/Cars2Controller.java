@@ -29,6 +29,8 @@ public class Cars2Controller {
     @PostMapping("create")
     public ResponseEntity<CarsDto>addItem(@RequestBody CarsDto carsDto){
         System.out.println("Create");
+        System.out.println("Create");
+
         return ResponseEntity.ok(cars2Service.save(carsDto));
     }
 
